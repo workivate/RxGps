@@ -12,22 +12,10 @@ Finding current location cannot be easier on Android !
 
 See Releases
 
+https://github.com/ersen-lw/RxGps/releases
+
 # Download
 
-```java
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
- ```
-
-```java
-dependencies {
-	        implementation 'com.github.ersen-lw:RxGps:v1.1.0'
-	}
-```
 
 # Usage
 
