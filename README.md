@@ -10,19 +10,23 @@ Finding current location cannot be easier on Android !
 
 # Fork Changes 
 
-Updated Tbruyelle Rx Permission Lib to latest version. Main reason was the old version of the lib used the non support fragment manager
-
-RxGps, updated RxJava2, Support Lib and Location dependencies
-
-Fixed a crash caused by the update. Any invocation from the RxPermission has to run on the main thread
+See Releases
 
 # Download
 
-<a href='https://ko-fi.com/A160LCC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-In your module [![Download](https://api.bintray.com/packages/florent37/maven/RxGps/images/download.svg)](https://bintray.com/florent37/maven/RxGps/_latestVersion)
 ```java
-implementation 'com.github.ersen:rxgps:(last version)'
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ ```
+
+```java
+dependencies {
+	        implementation 'com.github.ersen-lw:RxGps:v1.1.0'
+	}
 ```
 
 # Usage
