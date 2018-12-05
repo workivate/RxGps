@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.ersen'
 
 android {
     compileSdkVersion project.sdk
@@ -20,34 +22,4 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:${project.rxJava2}"
     implementation "com.google.android.gms:play-services-location:${project.playServicesLocation}"
     implementation "com.github.tbruyelle:rxpermissions:${project.tbruyelleRxPermissions}"
-}
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'RxGps'
-    orgName = 'Ersen'
-
-    publishedGroupId = 'com.github.ersen'
-    libraryName = 'RxGps'
-    artifact = 'rxgps'
-
-    libraryDescription = 'RxGps'
-
-    siteUrl = 'https://github.com/ersen-lw/RxGps'
-    gitUrl = 'https://github.com/ersen-lw/RxGps.git'
-
-    libraryVersion = rootProject.ext.libraryVersion
-
-    developerId = 'ersen-lw'
-    developerName = 'Ersen Osman'
-    developerEmail = ''
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
-if (project.rootProject.file('local.properties').exists()) {
-    apply from: rootProject.file('gradle/install-v1.gradle')
-    apply from: rootProject.file('gradle/bintray-android-v1.gradle')
 }
