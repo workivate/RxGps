@@ -16,6 +16,23 @@ https://github.com/ersen-lw/RxGps/releases
 
 # Download
 
+Add the following to your project build.gralde file
+
+```
+  allprojects {
+        repositories {
+              maven {
+                    url 'https://dl.bintray.com/erseno/RxGps'
+              }
+  }
+}
+```
+
+Then add this dependency to your app build.gradle file.
+
+```
+  implementation "com.ersen:rxGps:1.1.1"
+```
 
 # Usage
 
