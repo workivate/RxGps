@@ -18,9 +18,8 @@ android {
 }
 
 dependencies {
+    implementation project(':rxgps')
     implementation "com.android.support:appcompat-v7:${project.supportVersion}"
-    implementation "com.ersen:rxGps:1.1.1"
-
     implementation "io.reactivex.rxjava2:rxandroid:${project.rxJava2Android}"
     implementation "io.reactivex.rxjava2:rxjava:${project.rxJava2}"
 }
