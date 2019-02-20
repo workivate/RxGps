@@ -19,13 +19,16 @@ https://github.com/ersen-lw/RxGps/releases
 Add the following to your project build.gralde file
 
 ```
-  allprojects {
-        repositories {
-              maven {
-                    url 'https://dl.bintray.com/erseno/RxGps'
-              }
-  }
-}
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ 
+ dependencies {
+	        implementation 'com.github.workivate:RxGps:v1.1.2'
+	}
 ```
 
 Then add this dependency to your app build.gradle file.
