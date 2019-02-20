@@ -25,16 +25,15 @@ allprojects {
 			maven { url 'https://jitpack.io' }
 		}
 	}
+```
+
+ Then add this dependency to your app build.gradle file.
+ 
+```
  
  dependencies {
-	        implementation 'com.github.workivate:RxGps:v1.1.2'
+	      implementation 'com.github.workivate:RxGps:v1.1.2'
 	}
-```
-
-Then add this dependency to your app build.gradle file.
-
-```
-  implementation "com.ersen:rxGps:1.1.1"
 ```
 
 # Usage
